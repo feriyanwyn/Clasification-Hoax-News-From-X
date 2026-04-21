@@ -22,11 +22,11 @@ if [ "$(docker ps -aq -f status=exited -f name=hoax-app)" ]; then
 fi
 
 echo "[3/3] Starting the Docker container..."
-docker run -d -p 8501:8501 --name hoax-app hoax-detection-app
+docker run -d -p 8505:8505 --name hoax-app hoax-detection-app
 
 echo "==========================================="
 echo "Deployment successful! 🎉"
-echo "You can view the app at: http://localhost:8501"
+echo "You can view the app at: http://localhost:8505"
 echo "To view logs, run: docker logs -f hoax-app"
 echo "To stop the app, run: docker stop hoax-app"
 echo "==========================================="
